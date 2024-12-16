@@ -9,8 +9,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        customBlue: '#4c6ef5',
+        customPurple: '#6a4c93',
+        customPink: '#f06595',
+      },
+      animation: {
+        scroll: 'scroll 2s linear infinite',
+      },
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateY(0)' },
+          '100%': { transform: 'translateY(100%)' },
+        },
       },
     },
   },
