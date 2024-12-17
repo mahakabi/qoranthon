@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Footer = () => {
     return (
@@ -8,9 +8,11 @@ const Footer = () => {
             <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-wrap justify-between items-center gap-4">
                     <div className="flex items-center space-x-4">
-                        <img
-                            src="./logo.png"
+                        <Image
+                            src="/logo.png"
                             alt="Logo"
+                            width={48}
+                            height={48}
                             className="w-12"
                         />
                         <span className="text-xl font-bold">Hackathon</span>

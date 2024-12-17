@@ -1,10 +1,11 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const EmergingTechnologies = () => {
     return (
-        <section className="py-20 bg-gray-100" >
+        <section className="py-20 bg-gray-100">
             <div className="container mx-auto text-center">
                 <motion.h2
                     className="text-4xl sm:text-5xl font-bold text-[#1c5d34] mb-12"
@@ -27,9 +28,11 @@ const EmergingTechnologies = () => {
                         transition={{ duration: 1, delay: 0.2 }}
                     >
                         <div className="flex justify-center mb-4">
-                            <img
-                                src="./microchip.png"
+                            <Image
+                                src="/microchip.png"
                                 alt="AI Icon"
+                                width={64}
+                                height={64}
                                 className="w-16 h-16"
                             />
                         </div>
@@ -45,9 +48,11 @@ const EmergingTechnologies = () => {
                         transition={{ duration: 1, delay: 0.4 }}
                     >
                         <div className="flex justify-center mb-4">
-                            <img
-                                src="./virtual-reality.png"
+                            <Image
+                                src="/virtual-reality.png"
                                 alt="Extended Reality Icon"
+                                width={64}
+                                height={64}
                                 className="w-16 h-16"
                             />
                         </div>
@@ -63,9 +68,11 @@ const EmergingTechnologies = () => {
                         transition={{ duration: 1, delay: 0.6 }}
                     >
                         <div className="flex justify-center mb-4">
-                            <img
-                                src="./gamification.png"
+                            <Image
+                                src="/gamification.png"
                                 alt="Gamification Icon"
+                                width={64}
+                                height={64}
                                 className="w-16 h-16"
                             />
                         </div>
@@ -81,9 +88,11 @@ const EmergingTechnologies = () => {
                         transition={{ duration: 1, delay: 0.8 }}
                     >
                         <div className="flex justify-center mb-4">
-                            <img
-                                src="./ui.png"
+                            <Image
+                                src="/ui.png"
                                 alt="UX Design Icon"
+                                width={64}
+                                height={64}
                                 className="w-16 h-16"
                             />
                         </div>

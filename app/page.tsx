@@ -6,8 +6,6 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Objectives from "./components/Objectives";
-import Timeline from "./components/Timeline";
-import Timer from "./components/Timer";
 import Tracks from "./components/Tracks";
 import EmergingTechnologies from "./components/EmergingTechnologies";
 

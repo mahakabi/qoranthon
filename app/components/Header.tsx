@@ -1,7 +1,9 @@
 "use client";
+
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -33,39 +35,26 @@ const Header = () => {
                             شارك في الهاكاثون
                         </motion.button>
                     </div>
-
-                    <nav className={`flex items-center space-x-6 font-medium ${isScrolled ? "text-gray-800" : "text-white"
-                        }`}>
-                        <Link href="#about" className="hover:text-[#2c7444] p-4">
-                            نبذة
-                        </Link>
-                        <Link href="#goals" className="hover:text-[#2c7444]">
-                            الأهداف
-                        </Link>
-                        <Link href="#tracks" className="hover:text-[#2c7444]">
-                            المسارات
-                        </Link>
-                        <Link href="#timeline" className="hover:text-[#2c7444]">
-                            الخط الزمني
-                        </Link>
-                        <Link href="#faq" className="hover:text-[#2c7444]">
-                            الأسئلة الشائعة
-                        </Link>
-
-
-
-
+                    <nav className={`flex items-center gap-6 font-medium ${isScrolled ? "text-gray-800" : "text-white"}`}>
+                        <Link href="#about" className="hover:text-[#2c7444]">نبذة</Link>
+                        <Link href="#goals" className="hover:text-[#2c7444]">الأهداف</Link>
+                        <Link href="#tracks" className="hover:text-[#2c7444]">المسارات</Link>
+                        <Link href="#timeline" className="hover:text-[#2c7444]">الخط الزمني</Link>
+                        <Link href="#faq" className="hover:text-[#2c7444]">الأسئلة الشائعة</Link>
                     </nav>
+
 
                     <div className="flex items-center">
                         <Link href="/">
-                            <motion.img
-                                src="./logo.png"
-                                alt="logo"
-                                className="w-20"
-                                whileHover={{ scale: 1.1 }}
-                                transition={{ duration: 0.3 }}
-                            />
+                            <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
+                                <Image
+                                    src="/logo.png"
+                                    alt="logo"
+                                    width={80}
+                                    height={80}
+                                    className="w-20"
+                                />
+                            </motion.div>
                         </Link>
                     </div>
                 </div>
