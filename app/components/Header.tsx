@@ -36,7 +36,7 @@ const Header = () => {
 
                     <nav className={`flex items-center space-x-6 font-medium ${isScrolled ? "text-gray-800" : "text-white"
                         }`}>
-                        <Link href="#about" className="hover:text-[#2c7444]">
+                        <Link href="#about" className="hover:text-[#2c7444] p-4">
                             نبذة
                         </Link>
                         <Link href="#goals" className="hover:text-[#2c7444]">

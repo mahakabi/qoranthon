@@ -1,11 +1,10 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { FaStar, FaLightbulb, FaBookOpen } from "react-icons/fa";
 
 const Objectives = () => {
     return (
-        <section className="py-20 bg-[#f1f2f2]">
+        <section className="py-20 bg-white">
             <div className="container mx-auto text-center">
                 <motion.h2
                     className="text-4xl sm:text-5xl font-bold text-[#1c5d34] mb-12"
@@ -22,11 +21,29 @@ const Objectives = () => {
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.2 }}
+                        whileHover={{
+                            scale: 1.1,
+                            transition: { duration: 0.2 },
+                        }}
                     >
-                        <div className="flex justify-center mb-4">
-                            <FaStar size={40} />
-                        </div>
-                        <p className="text-xl text-white">
+                        <motion.div
+                            className="flex justify-center mb-4"
+                            initial={{ scale: 0 }}
+                            animate={{ scale: 1 }}
+                            transition={{
+                                duration: 0.5,
+                                delay: 0.3,
+                                type: "spring",
+                                stiffness: 100,
+                            }}
+                        >
+                            <img
+                                src="./ux-design.png"
+                                alt="Star Icon"
+                                className="w-12 h-12"
+                            />
+                        </motion.div>
+                        <p className="text-lg text-white">
                             تحسين تجربة المستخدم لتطبيقات القرآن الكريم
                         </p>
                     </motion.div>
@@ -36,11 +53,29 @@ const Objectives = () => {
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.4 }}
+                        whileHover={{
+                            scale: 1.1,
+                            transition: { duration: 0.2 },
+                        }}
                     >
-                        <div className="flex justify-center mb-4">
-                            <FaLightbulb size={40} />
-                        </div>
-                        <p className="text-xl text-white">
+                        <motion.div
+                            className="flex justify-center mb-4"
+                            initial={{ scale: 0 }}
+                            animate={{ scale: 1 }}
+                            transition={{
+                                duration: 0.5,
+                                delay: 0.5,
+                                type: "spring",
+                                stiffness: 100,
+                            }}
+                        >
+                            <img
+                                src="./group-idea.png"
+                                alt="Lightbulb Icon"
+                                className="w-12 h-12"
+                            />
+                        </motion.div>
+                        <p className="text-lg text-white">
                             استكشاف آفاق جديدة لتطوير أفكار مبتكرة في مجال تطبيقات القرآن الكريم
                         </p>
                     </motion.div>
@@ -50,11 +85,29 @@ const Objectives = () => {
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.6 }}
+                        whileHover={{
+                            scale: 1.1,
+                            transition: { duration: 0.2 },
+                        }}
                     >
-                        <div className="flex justify-center mb-4">
-                            <FaBookOpen size={40} />
-                        </div>
-                        <p className="text-xl text-white">
+                        <motion.div
+                            className="flex justify-center mb-4"
+                            initial={{ scale: 0 }}
+                            animate={{ scale: 1 }}
+                            transition={{
+                                duration: 0.5,
+                                delay: 0.7,
+                                type: "spring",
+                                stiffness: 100,
+                            }}
+                        >
+                            <img
+                                src="./book.png"
+                                alt="Book Icon"
+                                className="w-12 h-12"
+                            />
+                        </motion.div>
+                        <p className="text-lg text-white">
                             تعزيز الوعي بأهمية دمج المعرفة الشرعية مع الخبرات التقنية
                         </p>
                     </motion.div>

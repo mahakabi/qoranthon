@@ -9,6 +9,7 @@ const About = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
+            
         >
             <motion.h2
                 className="text-4xl sm:text-5xl font-extrabold mb-2 text-center"
@@ -43,7 +44,7 @@ const About = () => {
                 تعزز تجربة مستخدمي تطبيقات القرآن الكريم في قراءة وتدبر وتدارس الآيات. يُعد آياتثون منصة تفاعلية
                 تُمكّن المشاركين من توظيف التقنيات الحديثة مثل{" "}
                 الذكاء الاصطناعي والواقع المعزز لتقديم ابتكارات تسهم
-                في خدمة <span className="text-[#366f4c] font-semibold">كتاب الله</span>
+                في خدمة <span className="text-[#366f4c] font-semibold">كتاب الله</span>.
             </motion.p>
         </motion.section>
     );

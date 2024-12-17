@@ -9,10 +9,10 @@ const FAQ = () => {
     };
 
     return (
-        <section className="py-24 bg-gray-100">
+        <section className="py-24 bg-white">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="mb-16">
-                    <h2 className="text-4xl font-manrope text-center font-bold text-gray-900 leading-[3.25rem]">
+                    <h2 className="text-4xl font-manrope text-center font-bold text-[#1c5d34] leading-[3.25rem]">
                         الأسئلة الشائعة
                     </h2>
                 </div>
@@ -46,7 +46,7 @@ const FAQ = () => {
                         }
                     ].map((faq, index) => (
                         <div
-                            className="accordion py-8 px-6 border-b border-solid border-gray-200 transition-all duration-500 rounded-2xl hover:bg-green-50 accordion-active:bg-green-50"
+                            className="accordion ml-20 mr-20 py-8 px-6 border-b border-solid border-gray-200 transition-all duration-500 rounded-2xl hover:bg-green-50 accordion-active:bg-green-50 bg-gray-100"
                             key={index}
                         >
                             <button

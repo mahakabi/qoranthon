@@ -9,6 +9,7 @@ import Objectives from "./components/Objectives";
 import Timeline from "./components/Timeline";
 import Timer from "./components/Timer";
 import Tracks from "./components/Tracks";
+import EmergingTechnologies from "./components/EmergingTechnologies";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -24,7 +25,9 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
+      <Objectives />
       <Tracks />
+      <EmergingTechnologies />
       {/* <Timeline /> */}
       <FAQ />
       <Footer />
