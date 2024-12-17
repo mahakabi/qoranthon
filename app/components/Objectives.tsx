@@ -5,8 +5,8 @@ import Image from "next/image";
 
 const Objectives = () => {
     return (
-        <section id="goals" className="py-20 bg-white">
-            <div className="container mx-auto text-center">
+        <section id="goals" className="py-20 bg-white px-6">
+            <div className=" mx-auto text-center">
                 <motion.h2
                     className="text-4xl sm:text-5xl font-bold text-[#1c5d34] mb-12"
                     initial={{ opacity: 0 }}
@@ -46,12 +46,11 @@ const Objectives = () => {
                                 priority
                             />
                         </motion.div>
-                        <p className="text-lg text-white">
+                        <p className="text-sm md:text-xl text-white">
                             تحسين تجربة المستخدم لتطبيقات القرآن الكريم
                         </p>
                     </motion.div>
 
-                    {/* Objective 2 */}
                     <motion.div
                         className="bg-[#1c5d34] p-8 rounded-lg shadow-xl border border-[#366f4c]"
                         initial={{ opacity: 0, y: 50 }}
@@ -81,12 +80,11 @@ const Objectives = () => {
                                 priority
                             />
                         </motion.div>
-                        <p className="text-lg text-white">
+                        <p className="text-sm md:text-xl text-white">
                             استكشاف آفاق جديدة لتطوير أفكار مبتكرة في مجال تطبيقات القرآن الكريم
                         </p>
                     </motion.div>
 
-                    {/* Objective 3 */}
                     <motion.div
                         className="bg-[#1c5d34] p-8 rounded-lg shadow-xl border border-[#366f4c]"
                         initial={{ opacity: 0, y: 50 }}
@@ -116,7 +114,7 @@ const Objectives = () => {
                                 priority
                             />
                         </motion.div>
-                        <p className="text-lg text-white">
+                        <p className="text-sm md:text-xl text-white">
                             تعزيز الوعي بأهمية دمج المعرفة الشرعية مع الخبرات التقنية
                         </p>
                     </motion.div>

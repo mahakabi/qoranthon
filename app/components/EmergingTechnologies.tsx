@@ -5,8 +5,8 @@ import Image from "next/image";
 
 const EmergingTechnologies = () => {
     return (
-        <section className="py-16 sm:py-20 bg-gray-100">
-            <div className="container mx-auto px-4 sm:px-8 lg:px-16 text-center">
+        <section className="py-16 sm:py-20 bg-gray-100 px-6">
+            <div className="mx-auto px-4 sm:px-8 lg:px-16 text-center">
                 <motion.h2
                     className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1c5d34] mb-8 sm:mb-12"
                     initial={{ opacity: 0 }}
@@ -16,7 +16,7 @@ const EmergingTechnologies = () => {
                     مسارات التقنيات الناشئة
                 </motion.h2>
 
-                <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-6 sm:mb-8">
+                <p className="text-base sm:text-md md:text-xl text-gray-700 mb-6 sm:mb-8">
                     بعد اختيار التحدي يتم العمل على تقديم حلول باستخدام إحدى التقنيات التالية:
                 </p>
 
@@ -36,7 +36,7 @@ const EmergingTechnologies = () => {
                                 className="w-12 sm:w-16 h-12 sm:h-16"
                             />
                         </div>
-                        <p className="text-lg sm:text-xl font-medium text-gray-800">
+                        <p className="text-sm md:text-xl font-medium text-green-900">
                             الذكاء الاصطناعي
                         </p>
                     </motion.div>
@@ -56,7 +56,7 @@ const EmergingTechnologies = () => {
                                 className="w-12 sm:w-16 h-12 sm:h-16"
                             />
                         </div>
-                        <p className="text-lg sm:text-xl font-medium text-gray-800">
+                        <p className="text-sm md:text-xl font-medium text-green-900">
                             تقنيات الواقع الممتد
                         </p>
                     </motion.div>
@@ -76,7 +76,7 @@ const EmergingTechnologies = () => {
                                 className="w-12 sm:w-16 h-12 sm:h-16"
                             />
                         </div>
-                        <p className="text-lg sm:text-xl font-medium text-gray-800">
+                        <p className="text-sm md:text-xl font-medium text-green-900">
                             التحديات (Gamification)
                         </p>
                     </motion.div>
@@ -96,7 +96,7 @@ const EmergingTechnologies = () => {
                                 className="w-12 sm:w-16 h-12 sm:h-16"
                             />
                         </div>
-                        <p className="text-lg sm:text-xl font-medium text-gray-800">
+                        <p className="text-sm md:text-xl font-medium text-green-900">
                             تصميم الواجهات وتجربة المستخدم
                         </p>
                     </motion.div>
