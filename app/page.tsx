@@ -23,9 +23,9 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
-      <Objectives />
+      {/* <Objectives /> */}
       <Tracks />
-      <EmergingTechnologies />
+      {/* <EmergingTechnologies /> */}
       {/* <Timeline /> */}
       <FAQ />
       <Footer />

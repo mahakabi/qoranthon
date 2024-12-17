@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Footer = () => {
     return (
-        <footer className="bg-[#1c5d34] text-white py-8">
+        <footer className="bg-[#1c5d34] text-white py-8 text-center">
             <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-wrap justify-between items-center gap-4">
                     <div className="flex items-center space-x-4">
@@ -15,19 +15,18 @@ const Footer = () => {
                             height={48}
                             className="w-12"
                         />
-                        <span className="text-xl font-bold">Hackathon</span>
                     </div>
 
-                    <nav className="flex space-x-6 font-medium">
-                        <Link href="#about" className="hover:text-[#2c7444]">
+                    <nav className="flex text-center font-medium mt-4 sm:mt-0">
+                        {/* <Link href="#about" className="hover:text-[#2c7444]">
                             نبذة
                         </Link>
                         <Link href="#timeline" className="hover:text-[#2c7444]">
                             الخط الزمني
-                        </Link>
-                        <Link href="#contact" className="hover:text-[#2c7444]">
+                        </Link> */}
+                        {/* <Link href="#contact" className="hover:text-[#2c7444]">
                             تواصل
-                        </Link>
+                        </Link> */}
                     </nav>
                 </div>
 
@@ -38,7 +37,7 @@ const Footer = () => {
                         &copy; {new Date().getFullYear()} جميع الحقوق محفوظة
                     </p>
 
-                    <div className="flex space-x-4">
+                    <div className="flex space-x-2 mt-4 sm:mt-0">
                         <a
                             href="https://facebook.com"
                             target="_blank"

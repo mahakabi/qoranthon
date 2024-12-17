@@ -58,6 +58,7 @@ const tracks = [
 const Tracks = () => {
     return (
         <motion.section
+            id="tracks"
             className="py-16 px-6 bg-gray-100 text-gray-800"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -74,11 +75,11 @@ const Tracks = () => {
             >
                 <div className="w-24 h-1 bg-[#1c5d34]"></div>
             </motion.div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 mx-9">
                 {tracks.map((track, index) => (
                     <motion.div
                         key={index}
-                        className="relative group bg-white shadow-lg rounded-lg p-8 overflow-hidden cursor-pointer"
+                        className="relative group bg-white shadow-lg rounded-lg p-6 sm:p-8 overflow-hidden cursor-pointer"
                         whileHover={{ scale: 1.05 }}
                         transition={{ duration: 0.3 }}
                     >
@@ -87,13 +88,13 @@ const Tracks = () => {
                                 {track.icon}
                             </div>
                         </div>
-                        <h3 className="text-sm text-[#1c5d34] mb-4 text-center group-hover:text-[#1c5d34] transition-colors duration-300">
+                        <h3 className="text-sm sm:text-base text-[#1c5d34] mb-4 text-center group-hover:text-[#1c5d34] transition-colors duration-300">
                             {track.title}
                         </h3>
                         <motion.div
                             className="absolute inset-0 flex items-center justify-center bg-[#1c5d34] text-white text-center p-6 opacity-0 group-hover:opacity-90 group-hover:rounded-lg transition-opacity duration-300 rounded-lg"
                         >
-                            <p className="leading-relaxed">{track.description}</p>
+                            <p className="leading-relaxed text-xs sm:text-sm">{track.description}</p>
                         </motion.div>
                     </motion.div>
                 ))}

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Objectives = () => {
     return (
-        <section className="py-20 bg-white">
+        <section id="goals" className="py-20 bg-white">
             <div className="container mx-auto text-center">
                 <motion.h2
                     className="text-4xl sm:text-5xl font-bold text-[#1c5d34] mb-12"
@@ -21,12 +21,9 @@ const Objectives = () => {
                         className="bg-[#1c5d34] p-8 rounded-lg shadow-xl border border-[#366f4c]"
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
-                        // transition={{ duration: 1, delay: 0.2 }}
                         whileHover={{
                             scale: 1.1,
-                            transition: {
-                                duration: 0.2
-                            },
+                            transition: { duration: 0.2 },
                         }}
                     >
                         <motion.div
@@ -42,10 +39,11 @@ const Objectives = () => {
                         >
                             <Image
                                 src="/ux-design.png"
-                                alt="Star Icon"
+                                alt="User Experience Design Icon"
                                 className="w-12 h-12"
                                 width={48}
                                 height={48}
+                                priority
                             />
                         </motion.div>
                         <p className="text-lg text-white">
@@ -53,11 +51,46 @@ const Objectives = () => {
                         </p>
                     </motion.div>
 
+                    {/* Objective 2 */}
                     <motion.div
                         className="bg-[#1c5d34] p-8 rounded-lg shadow-xl border border-[#366f4c]"
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
-                        // transition={{ duration: 1, delay: 0.4 }}
+                        whileHover={{
+                            scale: 1.1,
+                            transition: { duration: 0.2 },
+                        }}
+                    >
+                        <motion.div
+                            className="flex justify-center mb-4"
+                            initial={{ scale: 0 }}
+                            animate={{ scale: 1 }}
+                            transition={{
+                                duration: 0.5,
+                                delay: 0.3,
+                                type: "spring",
+                                stiffness: 100,
+                            }}
+                        >
+                            <Image
+                                src="/group-idea.png"
+                                alt="Group Idea Icon"
+                                className="w-12 h-12"
+                                width={48}
+                                height={48}
+                                priority
+                            />
+                        </motion.div>
+                        <p className="text-lg text-white">
+                            استكشاف آفاق جديدة لتطوير أفكار مبتكرة في مجال تطبيقات القرآن الكريم
+                        </p>
+                    </motion.div>
+
+                    {/* Objective 3 */}
+                    <motion.div
+                        className="bg-[#1c5d34] p-8 rounded-lg shadow-xl border border-[#366f4c]"
+                        initial={{ opacity: 0, y: 50 }}
+                        animate={{ opacity: 1, y: 0 }}
                         whileHover={{
                             scale: 1.1,
                             transition: { duration: 0.2 },
@@ -75,45 +108,12 @@ const Objectives = () => {
                             }}
                         >
                             <Image
-                                src="/group-idea.png"
-                                alt="Lightbulb Icon"
-                                className="w-12 h-12"
-                                width={48}
-                                height={48}
-                            />
-                        </motion.div>
-                        <p className="text-lg text-white">
-                            استكشاف آفاق جديدة لتطوير أفكار مبتكرة في مجال تطبيقات القرآن الكريم
-                        </p>
-                    </motion.div>
-
-                    <motion.div
-                        className="bg-[#1c5d34] p-8 rounded-lg shadow-xl border border-[#366f4c]"
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        // transition={{ duration: 1, delay: 0.6 }}
-                        whileHover={{
-                            scale: 1.1,
-                            transition: { duration: 0.2 },
-                        }}
-                    >
-                        <motion.div
-                            className="flex justify-center mb-4"
-                            initial={{ scale: 0 }}
-                            animate={{ scale: 1 }}
-                            transition={{
-                                duration: 0.5,
-                                delay: 0.7,
-                                type: "spring",
-                                stiffness: 100,
-                            }}
-                        >
-                            <Image
                                 src="/book.png"
                                 alt="Book Icon"
                                 className="w-12 h-12"
                                 width={48}
                                 height={48}
+                                priority
                             />
                         </motion.div>
                         <p className="text-lg text-white">

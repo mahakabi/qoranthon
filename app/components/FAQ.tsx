@@ -9,10 +9,10 @@ const FAQ = () => {
     };
 
     return (
-        <section className="py-24 bg-white">
+        <section id='faq' className="py-24 bg-white">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="mb-16">
-                    <h2 className="text-4xl font-manrope text-center font-bold text-[#1c5d34] leading-[3.25rem]">
+                    <h2 className="text-3xl sm:text-4xl font-manrope text-center font-bold text-[#1c5d34] leading-[3.25rem]">
                         الأسئلة الشائعة
                     </h2>
                 </div>
@@ -46,16 +46,16 @@ const FAQ = () => {
                         }
                     ].map((faq, index) => (
                         <div
-                            className="accordion ml-20 mr-20 py-8 px-6 border-b border-solid border-gray-200 transition-all duration-500 rounded-2xl hover:bg-green-50 accordion-active:bg-green-50 bg-gray-100"
+                            className="accordion mx-auto py-8 px-6 border-b border-solid border-gray-200 transition-all duration-500 rounded-2xl hover:bg-green-50 accordion-active:bg-green-50 bg-gray-100 max-w-3xl sm:px-8 my-4"
                             key={index}
                         >
                             <button
-                                className="accordion-toggle group inline-flex items-center justify-between leading-8 text-gray-900 w-full transition duration-500 text-left hover:text-green-600 accordion-active:font-medium accordion-active:text-green-600"
+                                className={`accordion-toggle group inline-flex items-center justify-between leading-8 w-full transition duration-500 text-right hover:text-green-600 accordion-active:font-medium accordion-active:text-green-600`}
                                 onClick={() => handleToggle(index)}
                             >
-                                <h5>{faq.question}</h5>
+                                <h5 className={`"text-base sm:text-sm ${activeIndex === index ? 'text-green-900' : 'text-gray-900'} `}>{faq.question}</h5>
                                 <svg
-                                    className={`text-gray-500 transition duration-500 group-hover:text-green-600 accordion-active:text-green-600 ${activeIndex === index ? 'rotate-180' : ''
+                                    className={`text-gray-500 transition duration-500 group-hover:text-green-600 accordion-active:text-green-600  ${activeIndex === index ? 'rotate-180' : ''
                                         }`}
                                     width="22"
                                     height="22"
@@ -75,7 +75,7 @@ const FAQ = () => {
                             {activeIndex === index && (
                                 <div className="accordion-content w-full px-0 overflow-hidden">
                                     <p
-                                        className="text-base text-gray-900 leading-6"
+                                        className="text-base sm:text-sm text-gray-900 leading-6 pt-6"
                                         dangerouslySetInnerHTML={{ __html: faq.answer }}
                                     />
                                 </div>

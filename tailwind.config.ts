@@ -12,6 +12,7 @@ export default {
         customBlue: '#4c6ef5',
         customPurple: '#6a4c93',
         customPink: '#f06595',
+        primary: "#2c7444"
       },
       animation: {
         scroll: 'scroll 2s linear infinite',
