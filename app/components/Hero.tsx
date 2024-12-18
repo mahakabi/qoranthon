@@ -40,12 +40,15 @@ const Hero = () => {
                 autoPlay
                 muted
                 loop
+                preload="auto"
+                playsInline
                 className="absolute top-0 left-0 w-full h-full object-cover"
             >
                 <source src="/background.mp4" type="video/mp4" />
                 <source src="/background.webm" type="video/webm" />
                 Your browser does not support the video tag.
             </video>
+
 
             <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-0"></div>
 
