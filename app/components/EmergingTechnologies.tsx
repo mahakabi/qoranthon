@@ -13,7 +13,7 @@ const EmergingTechnologies = () => {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1 }}
                 >
-                    مسارات التقنيات الناشئة
+                     التقنيات الناشئة
                 </motion.h2>
 
                 <p className="text-base sm:text-md md:text-xl text-gray-700 mb-6 sm:mb-8">
