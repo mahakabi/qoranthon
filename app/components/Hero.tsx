@@ -43,6 +43,7 @@ const Hero = () => {
                 className="absolute top-0 left-0 w-full h-full object-cover"
             >
                 <source src="/background.mp4" type="video/mp4" />
+                <source src="/background.webm" type="video/webm" />
                 Your browser does not support the video tag.
             </video>
 
@@ -79,20 +80,16 @@ const Hero = () => {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, delay: 2 }}
                 >
-                    {[
-                        { label: "يوم", value: timeLeft.days },
-                        { label: "ساعة", value: timeLeft.hours },
-                        { label: "دقيقة", value: timeLeft.minutes },
-                        { label: "ثانية", value: timeLeft.seconds },
-                    ].map((time, index) => (
-                        <div
-                            key={index}
-                            className="flex flex-col items-center bg-white rounded-md p-3 shadow-md"
-                        >
-                            <span>{time.value}</span>
-                            <span className="text-sm">{time.label}</span>
-                        </div>
-                    ))}
+                    {[{ label: "يوم", value: timeLeft.days },
+                    { label: "ساعة", value: timeLeft.hours },
+                    { label: "دقيقة", value: timeLeft.minutes },
+                    { label: "ثانية", value: timeLeft.seconds }]
+                        .map((time, index) => (
+                            <div key={index} className="flex flex-col items-center bg-white rounded-md p-3 shadow-md">
+                                <span>{time.value}</span>
+                                <span className="text-sm">{time.label}</span>
+                            </div>
+                        ))}
                 </motion.div>
             </div>
         </motion.section>
