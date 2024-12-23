@@ -17,7 +17,7 @@ const EmergingTechnologies = () => {
                 </motion.h2>
 
                 <p className="text-base sm:text-md md:text-xl text-gray-700 mb-6 sm:mb-8">
-                    بعد اختيار التحدي يتم العمل على تقديم حلول باستخدام إحدى التقنيات التالية:
+                    بعد اختيار المسار يتم العمل على تقديم حلول باستخدام إحدى التقنيات التالية:
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">

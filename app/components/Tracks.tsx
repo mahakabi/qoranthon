@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { AiOutlineSearch, AiOutlineUser, AiOutlineMenu, AiOutlineCustomerService, AiOutlineBook, AiOutlineTeam, AiOutlineFullscreenExit } from "react-icons/ai";
+import { AiOutlineUser, AiOutlineMenu, AiOutlineCustomerService, AiOutlineBook } from "react-icons/ai";
 
 const tracks = [
     {
@@ -25,34 +25,34 @@ const tracks = [
             "يهتم هذا المسار بتقديم معاني وتفسير الآيات بطريقة مُيسّرة تُساعد على فهم النصوص الشرعية وتدبرها.",
         icon: <AiOutlineBook />,
     },
+    // {
+    //     track: "المجال الرابع",
+    //     title: "البحث",
+    //     description:
+    //         "مسار يُعنى بتسهيل عملية البحث عن الآيات أو المواضيع داخل النص القرآني والتفاسير المرتبطة به بطرق دقيقة وسريعة.",
+    //     icon: <AiOutlineSearch />,
+    // },
     {
         track: "المجال الرابع",
-        title: "البحث",
-        description:
-            "مسار يُعنى بتسهيل عملية البحث عن الآيات أو المواضيع داخل النص القرآني والتفاسير المرتبطة به بطرق دقيقة وسريعة.",
-        icon: <AiOutlineSearch />,
-    },
-    {
-        track: "المجال الخامس",
         title: "المجتمع القرآني",
         description:
             "يهدف هذا المسار إلى تعزيز التواصل بين المستخدمين من خلال إنشاء منصات تفاعلية تُشجّع على تبادل المعرفة القرآنية، وتشكل بيئة مشجعة للتعلم والمشاركة.",
         icon: <AiOutlineUser />,
     },
-    {
-        track: "المجال السادس",
-        title: "الأطفال",
-        description:
-            "مسار يُخصص لتطوير تجارب تعليمية تتناسب مع احتياجات الأطفال، تُساعدهم على التعرف على القرآن الكريم وتدارسه بطريقة شيّقة.",
-        icon: <AiOutlineTeam />,
-    },
-    {
-        track: "المجال السابع",
-        title: "ذوو الاحتياجات الخاصة",
-        description:
-            "يهتم هذا المسار بتطوير تطبيقات أو ميزات تُسهل وصول ذوي الاحتياجات الخاصة إلى القرآن الكريم وتفاعُلهم معه.",
-        icon: <AiOutlineFullscreenExit />,
-    },
+    // {
+    //     track: "المجال السادس",
+    //     title: "الأطفال",
+    //     description:
+    //         "مسار يُخصص لتطوير تجارب تعليمية تتناسب مع احتياجات الأطفال، تُساعدهم على التعرف على القرآن الكريم وتدارسه بطريقة شيّقة.",
+    //     icon: <AiOutlineTeam />,
+    // },
+    // {
+    //     track: "المجال السابع",
+    //     title: "ذوو الاحتياجات الخاصة",
+    //     description:
+    //         "يهتم هذا المسار بتطوير تطبيقات أو ميزات تُسهل وصول ذوي الاحتياجات الخاصة إلى القرآن الكريم وتفاعُلهم معه.",
+    //     icon: <AiOutlineFullscreenExit />,
+    // },
 ];
 
 const Tracks = () => {
@@ -75,7 +75,7 @@ const Tracks = () => {
             >
                 <div className="w-24 h-1 bg-[#1c5d34]"></div>
             </motion.div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 mx-9">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-8 mx-9">
                 {tracks.map((track, index) => (
                     <motion.div
                         key={index}
@@ -92,7 +92,7 @@ const Tracks = () => {
                             {track.title}
                         </h3>
                         <motion.div
-                            className="absolute inset-0 flex items-center justify-center bg-[#1c5d34] text-white text-center p-6 opacity-0 group-hover:opacity-90 group-hover:rounded-lg transition-opacity duration-300 rounded-lg"
+                            className="absolute inset-0 flex items-center justify-center bg-[#1c5d34] text-white text-center p-6 opacity-0 group-hover:opacity-100 group-hover:rounded-lg transition-opacity duration-300 rounded-lg"
                         >
                             <p className="leading-relaxed text-xs sm:text-sm">{track.description}</p>
                         </motion.div>
