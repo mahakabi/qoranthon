@@ -5,18 +5,18 @@ import Image from "next/image";
 
 const EmergingTechnologies = () => {
     return (
-        <section className="py-16 sm:py-20 bg-gray-100 px-6">
+        <section className="py-16 sm:py-20 bg-[#1c5d34] px-6">
             <div className="mx-auto px-4 sm:px-8 lg:px-16 text-center">
                 <motion.h2
-                    className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1c5d34] mb-8 sm:mb-12"
+                    className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-8 sm:mb-12"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1 }}
                 >
-                     التقنيات الناشئة
+                    التقنيات الناشئة
                 </motion.h2>
 
-                <p className="text-base sm:text-md md:text-xl text-gray-700 mb-6 sm:mb-8">
+                <p className="text-base sm:text-md md:text-xl text-white mb-6 sm:mb-8">
                     بعد اختيار المسار يتم العمل على تقديم حلول باستخدام إحدى التقنيات التالية:
                 </p>
 

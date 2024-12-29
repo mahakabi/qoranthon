@@ -39,7 +39,7 @@ const Hero = () => {
             <video
                 autoPlay
                 muted
-                loop
+                // loop
                 preload="auto"
                 playsInline
                 className="absolute top-0 left-0 w-full h-full object-cover"

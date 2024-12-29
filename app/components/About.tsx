@@ -13,7 +13,7 @@ const About = () => {
         >
 
             <motion.h2
-                className=" text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-center"
+                className=" text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-center block"
                 initial={{ y: -30, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8 }}
@@ -29,7 +29,7 @@ const About = () => {
             />
 
             <motion.p
-                className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed max-w-lg sm:max-w-2xl md:max-w-3xl text-center"
+                className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed max-w-lg sm:max-w-2xl md:max-w-3xl text-center block"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 0.8 }}

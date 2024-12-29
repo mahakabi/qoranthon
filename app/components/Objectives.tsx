@@ -6,7 +6,7 @@ import Image from "next/image";
 const Objectives = () => {
     return (
         <section id="goals" className="py-20 bg-white px-6">
-            <div className=" mx-auto text-center">
+            <div className="mx-auto text-center">
                 <motion.h2
                     className="text-4xl sm:text-5xl font-bold text-[#1c5d34] mb-12"
                     initial={{ opacity: 0 }}
