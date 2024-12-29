@@ -11,6 +11,7 @@ import Timeline from "./components/Timeline";
 import ProgressBar from "./components/ProgressBar";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import Prizes from "./components/Prize";
+import ContactUs from "./components/ContactUs";
 
 export default function Home() {
 
@@ -27,6 +28,7 @@ export default function Home() {
       <Prizes />
       <Timeline />
       <FAQ />
+      <ContactUs />
       <Footer />
     </div>
   );
