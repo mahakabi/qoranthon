@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+// import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const cairoRegular = localFont({
   src: "./fonts/Cairo-Regular.ttf",
@@ -29,7 +31,9 @@ export default function RootLayout({
       <body
         className={`${cairoRegular.variable} ${cairoBold.variable} antialiased`}
       >
+        {/* <Header /> */}
         {children}
+        <Footer />
       </body>
     </html>
   );
