@@ -1,106 +1,67 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
+import { Sparkles, BrainCircuit, Gamepad2, MonitorSmartphone } from "lucide-react";
+import { tree } from "next/dist/build/templates/app-page";
+
+const technologies = [
+    {
+        title: "الذكاء الاصطناعي",
+        icon: <BrainCircuit className="w-8 h-8 text-primary mb-4" />,
+        delay: 0.2,
+    },
+    {
+        title: "تقنيات الواقع الممتد",
+        icon: <Sparkles className="w-8 h-8 text-primary mb-4" />,
+        delay: 0.4,
+    },
+    {
+        title: "التحديات (Gamification)",
+        icon: <Gamepad2 className="w-8 h-8 text-primary mb-4" />,
+        delay: 0.6,
+    },
+    {
+        title: "تصميم الواجهات وتجربة المستخدم",
+        icon: <MonitorSmartphone className="w-8 h-8 text-primary mb-4" />,
+        delay: 0.8,
+    },
+];
 
 const EmergingTechnologies = () => {
     return (
-        <section className="py-16 sm:py-20 bg-[#1c5d34] px-6">
-            <div className="mx-auto px-4 sm:px-8 lg:px-16 text-center">
-                <motion.h2
-                    className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-8 sm:mb-12"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1 }}
-                >
-                    التقنيات الناشئة
-                </motion.h2>
+        <section className="py-20 px-6 sm:px-10 bg-primary text-center">
+            <motion.h2
+                className="text-3xl md:text-5xl font-bold text-secondary mb-6 sm:mb-10"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.8 }}
+            >
+                التقنيات الناشئة
+            </motion.h2>
 
-                <p className="text-base sm:text-md md:text-xl text-white mb-6 sm:mb-8">
-                    بعد اختيار المسار يتم العمل على تقديم حلول باستخدام إحدى التقنيات التالية:
-                </p>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+            <p className="text-md md:text-lg text-secondary max-w-2xl mx-auto mb-12">
+                بعد اختيار المسار يتم العمل على تقديم حلول باستخدام إحدى التقنيات التالية
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                {technologies.map((tech, index) => (
                     <motion.div
-                        className="bg-white p-6 sm:p-8 rounded-lg shadow-md border border-gray-300 hover:shadow-lg hover:scale-105 transition-transform duration-200"
-                        initial={{ opacity: 0, y: 50 }}
+                        key={index}
+                        className="bg-secondary rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                        initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1, delay: 0.2 }}
+                        transition={{ duration: 0.8, delay: tech.delay }}
                     >
-                        <div className="flex justify-center mb-4 sm:mb-6">
-                            <Image
-                                src="/microchip.png"
-                                alt="AI Icon"
-                                width={64}
-                                height={64}
-                                className="w-12 sm:w-16 h-12 sm:h-16"
-                            />
+                        <div className="flex flex-col items-center">
+                            {tech.icon}
+                            <p className="text-md sm:text-lg font-semibold text-primary">
+                                {tech.title}
+                            </p>
                         </div>
-                        <p className="text-sm md:text-xl font-medium text-green-900">
-                            الذكاء الاصطناعي
-                        </p>
                     </motion.div>
-
-                    <motion.div
-                        className="bg-white p-6 sm:p-8 rounded-lg shadow-md border border-gray-300 hover:shadow-lg hover:scale-105 transition-transform duration-200"
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1, delay: 0.4 }}
-                    >
-                        <div className="flex justify-center mb-4 sm:mb-6">
-                            <Image
-                                src="/virtual-reality.png"
-                                alt="Extended Reality Icon"
-                                width={64}
-                                height={64}
-                                className="w-12 sm:w-16 h-12 sm:h-16"
-                            />
-                        </div>
-                        <p className="text-sm md:text-xl font-medium text-green-900">
-                            تقنيات الواقع الممتد
-                        </p>
-                    </motion.div>
-
-                    <motion.div
-                        className="bg-white p-6 sm:p-8 rounded-lg shadow-md border border-gray-300 hover:shadow-lg hover:scale-105 transition-transform duration-200"
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1, delay: 0.6 }}
-                    >
-                        <div className="flex justify-center mb-4 sm:mb-6">
-                            <Image
-                                src="/gamification.png"
-                                alt="Gamification Icon"
-                                width={64}
-                                height={64}
-                                className="w-12 sm:w-16 h-12 sm:h-16"
-                            />
-                        </div>
-                        <p className="text-sm md:text-xl font-medium text-green-900">
-                            التحديات (Gamification)
-                        </p>
-                    </motion.div>
-
-                    <motion.div
-                        className="bg-white p-6 sm:p-8 rounded-lg shadow-md border border-gray-300 hover:shadow-lg hover:scale-105 transition-transform duration-200"
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1, delay: 0.8 }}
-                    >
-                        <div className="flex justify-center mb-4 sm:mb-6">
-                            <Image
-                                src="/ui.png"
-                                alt="UX Design Icon"
-                                width={64}
-                                height={64}
-                                className="w-12 sm:w-16 h-12 sm:h-16"
-                            />
-                        </div>
-                        <p className="text-sm md:text-xl font-medium text-green-900">
-                            تصميم الواجهات وتجربة المستخدم
-                        </p>
-                    </motion.div>
-                </div>
+                ))}
             </div>
         </section>
     );

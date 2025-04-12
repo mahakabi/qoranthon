@@ -29,7 +29,7 @@ export default function Timeline() {
 
         if (firstItem && activeItem) {
             const timelineTop = timelineRef.current.getBoundingClientRect().top;
-            return activeItem.top - timelineTop + activeItem.height / 2;
+            return activeItem.top - timelineTop + activeItem.height / 6;
         }
         return 0;
     };
@@ -45,7 +45,10 @@ export default function Timeline() {
     ];
 
     return (
-        <>
+        <section>
+            <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-center text-primary pt-12 '>
+                الجدول الزمني
+            </h2>
             <div id="timeline" className="timeline" ref={timelineRef}>
                 <div
                     className="timeline-progress"
@@ -54,7 +57,7 @@ export default function Timeline() {
                 {events.map((event, index) => (
                     <div
                         key={index}
-                        className={`timeline-item ${index % 2 === 0 ? "left" : "right"} ${activeIndex === index ? "active" : ""}`}
+                        className={`timeline-item ${index % 2 === 0 ? "left" : "right"} ${activeIndex === index ? "active" : ""} px-4`}
                     >
                         <div className="timeline-indicator"></div>
                         <div className="timeline-content">
@@ -64,6 +67,6 @@ export default function Timeline() {
                     </div>
                 ))}
             </div>
-        </>
+        </section>
     );
 }

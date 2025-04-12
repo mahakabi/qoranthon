@@ -23,11 +23,12 @@ export default function ProgressBar() {
     return (
         <div className="timeline-container">
             <div
-                className="progress-bar"
+                className="progress-bar bg-primary"
                 style={{
                     width: `${scrollProgress}%`,
                     height: "5px",
-                    backgroundColor: "#1c5d34",
+                    // backgroundColor: "primary",
+                    transition: " 0.1s ease-in-out",
                     position: "fixed",
                     top: "0",
                     left: "0",

@@ -11,6 +11,8 @@ import Timeline from "./components/Timeline";
 import ProgressBar from "./components/ProgressBar";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import Prizes from "./components/Prize";
+import Partners from "./components/Partners";
+import Reqierment from "./components/Reqierment";
 // import ContactUs from "./components/ContactUs";
 
 export default function Home() {
@@ -21,12 +23,16 @@ export default function Home() {
       <ScrollToTopButton />
       <Header />
       <Hero />
+      <div className="w-full h-1 bg-secondary"></div>
       <About />
       <Objectives />
+      {/* <div className="w-full h-1 bg-secondary"></div> */}
       <Tracks />
       <EmergingTechnologies />
       <Prizes />
+      <Reqierment />
       <Timeline />
+      <Partners />
       <FAQ />
       {/* <ContactUs /> */}
       {/* <Footer /> */}

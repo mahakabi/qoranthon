@@ -12,7 +12,7 @@ const FAQ = () => {
         <section id='faq' className="py-24 bg-white">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="mb-16">
-                    <h2 className="text-3xl sm:text-4xl font-manrope text-center font-bold text-[#1c5d34] leading-[3.25rem]">
+                    <h2 className="text-3xl sm:text-4xl font-manrope text-center font-bold text-primary leading-[3.25rem]">
                         الأسئلة الشائعة
                     </h2>
                 </div>
@@ -53,7 +53,7 @@ const FAQ = () => {
                                 className={`accordion-toggle group inline-flex items-center justify-between leading-8 w-full transition duration-500 text-right accordion-active:font-medium accordion-active:text-green-600`}
                                 onClick={() => handleToggle(index)}
                             >
-                                <h5 className={`"text-base sm:text-sm ${activeIndex === index ? 'text-green-900' : 'text-gray-900'} `}>{faq.question}</h5>
+                                <h5 className={`"text-base sm:text-sm ${activeIndex === index ? 'text-primary' : 'text-gray-900'} `}>{faq.question}</h5>
                                 <svg
                                     className={`text-gray-500 transition duration-500  accordion-active:text-green-600  ${activeIndex === index ? 'rotate-180' : ''
                                         }`}

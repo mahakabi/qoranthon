@@ -8,11 +8,16 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        quran: ['var(--font-quran)'],
+      },
       colors: {
         customBlue: '#4c6ef5',
         customPurple: '#6a4c93',
         customPink: '#f06595',
-        primary: "#2c7444"
+        primary: "#14406D",
+        secondary: "#E5E0D3",
+        tertiary: "#C4BBB6",
       },
       animation: {
         scroll: 'scroll 2s linear infinite',

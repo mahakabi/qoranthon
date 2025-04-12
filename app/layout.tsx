@@ -16,6 +16,13 @@ const cairoBold = localFont({
   display: "swap",
 });
 
+const quranFont = localFont({
+  src: "./fonts/Amiri-Regular.ttf",
+  variable: "--font-quran",
+  display: "swap",
+});
+
+
 export const metadata: Metadata = {
   title: "آياتثون",
   description: "طموحنا عنان السماء",
@@ -29,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="ar" dir="rtl">
       <body
-        className={`${cairoRegular.variable} ${cairoBold.variable} antialiased`}
+        className={`${cairoRegular.variable} ${cairoBold.variable} ${quranFont.variable} antialiased`}
       >
         {/* <Header /> */}
         {children}

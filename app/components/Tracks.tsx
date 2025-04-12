@@ -25,13 +25,6 @@ const tracks = [
             "يهتم هذا المسار بتقديم معاني وتفسير الآيات بطريقة مُيسّرة تُساعد على فهم النصوص الشرعية وتدبرها.",
         icon: <AiOutlineBook />,
     },
-    // {
-    //     track: "المجال الرابع",
-    //     title: "البحث",
-    //     description:
-    //         "مسار يُعنى بتسهيل عملية البحث عن الآيات أو المواضيع داخل النص القرآني والتفاسير المرتبطة به بطرق دقيقة وسريعة.",
-    //     icon: <AiOutlineSearch />,
-    // },
     {
         track: "المجال الرابع",
         title: "المجتمع القرآني",
@@ -39,60 +32,39 @@ const tracks = [
             "يهدف هذا المسار إلى تعزيز التواصل بين المستخدمين من خلال إنشاء منصات تفاعلية تُشجّع على تبادل المعرفة القرآنية، وتشكل بيئة مشجعة للتعلم والمشاركة.",
         icon: <AiOutlineUser />,
     },
-    // {
-    //     track: "المجال السادس",
-    //     title: "الأطفال",
-    //     description:
-    //         "مسار يُخصص لتطوير تجارب تعليمية تتناسب مع احتياجات الأطفال، تُساعدهم على التعرف على القرآن الكريم وتدارسه بطريقة شيّقة.",
-    //     icon: <AiOutlineTeam />,
-    // },
-    // {
-    //     track: "المجال السابع",
-    //     title: "ذوو الاحتياجات الخاصة",
-    //     description:
-    //         "يهتم هذا المسار بتطوير تطبيقات أو ميزات تُسهل وصول ذوي الاحتياجات الخاصة إلى القرآن الكريم وتفاعُلهم معه.",
-    //     icon: <AiOutlineFullscreenExit />,
-    // },
 ];
 
 const Tracks = () => {
     return (
         <motion.section
             id="tracks"
-            className="py-16 px-6 bg-gray-100 text-gray-800"
+            className="py-16 px-6 bg-gray-10"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
         >
-            <h2 className="text-2xl sm:text-5xl font-extrabold text-center mb-6">
+            <h2 className="text-2xl sm:text-5xl font-extrabold text-center mb-6 text-primary">
                 مسارات الهاكاثون
             </h2>
-            <motion.div
-                className="flex justify-center"
-                initial={{ scaleX: 0 }}
-                animate={{ scaleX: 1 }}
-                transition={{ duration: 1, delay: 1 }}
-            >
-                <div className="w-24 h-1 bg-[#1c5d34]"></div>
-            </motion.div>
+
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-8 mx-9">
                 {tracks.map((track, index) => (
                     <motion.div
                         key={index}
-                        className="relative group bg-white shadow-lg rounded-lg p-6 sm:p-8 overflow-hidden cursor-pointer"
-                        whileHover={{ scale: 1.05 }}
-                        transition={{ duration: 0.3 }}
+                        className="relative group bg-white shadow-lg rounded-lg p-6 sm:p-8 overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105"
                     >
                         <div className="text-center mb-6">
-                            <div className="text-[#1c5d34] p-4 rounded-full inline-block text-4xl">
+                            <div className="text-primary p-4 rounded-full inline-block text-4xl">
                                 {track.icon}
                             </div>
                         </div>
-                        <h3 className="text-sm sm:text-base text-[#1c5d34] mb-4 text-center group-hover:text-[#1c5d34] transition-colors duration-300">
+
+                        <h3 className="text-sm sm:text-base text-primary mb-4 text-center group-hover:text-primary transition-colors duration-300">
                             {track.title}
                         </h3>
+
                         <motion.div
-                            className="absolute inset-0 flex items-center justify-center bg-[#1c5d34] text-white text-center p-6 opacity-0 group-hover:opacity-100 group-hover:rounded-lg transition-opacity duration-300 rounded-lg"
+                            className="absolute inset-0 flex items-center justify-center bg-primary text-white text-center p-6 opacity-0 group-hover:opacity-100 group-hover:rounded-lg transition-opacity duration-300 rounded-lg"
                         >
                             <p className="leading-relaxed text-xs sm:text-sm">{track.description}</p>
                         </motion.div>
