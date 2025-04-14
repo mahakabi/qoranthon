@@ -2,7 +2,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Sparkles, BrainCircuit, Gamepad2, MonitorSmartphone } from "lucide-react";
-import { tree } from "next/dist/build/templates/app-page";
 
 const technologies = [
     {
