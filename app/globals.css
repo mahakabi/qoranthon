@@ -14,6 +14,17 @@
   }
 }
 
+@layer components {
+  .input {
+    @apply w-full p-3 border border-primary rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-customBlue transition;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white py-3 px-6 rounded-md hover:bg-customBlue transition;
+  }
+}
+
+
 html {
   scroll-behavior: smooth;
 }
