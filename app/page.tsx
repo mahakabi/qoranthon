@@ -12,11 +12,10 @@ import ProgressBar from "./components/ProgressBar";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import Prizes from "./components/Prize";
 import Partners from "./components/Partners";
-import Reqierment from "./components/Reqierment";
+// import Reqierment from "./components/Reqierment";
 // import ContactUs from "./components/ContactUs";
 
 export default function Home() {
-
   return (
     <div className="view">
       <ProgressBar />
@@ -30,7 +29,7 @@ export default function Home() {
       <Tracks />
       <EmergingTechnologies />
       <Prizes />
-      <Reqierment />
+      {/* <Reqierment /> */}
       <Timeline />
       <Partners />
       <FAQ />
