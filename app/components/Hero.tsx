@@ -26,10 +26,10 @@ const Hero = () => {
 
   useEffect(() => {
     const update = () => {
-      setTimeLeft(getTimeRemaining(new Date("2025-06-14T00:00:00").getTime()));
+      setTimeLeft(getTimeRemaining(new Date("2025-06-15T00:00:00").getTime()));
     };
 
-    update(); 
+    update();
 
     const interval = setInterval(update, 1000);
     return () => clearInterval(interval);
