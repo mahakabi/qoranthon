@@ -5,7 +5,7 @@ import React from "react";
 const Partners = () => {
   return (
     <section className="flex flex-col items-center justify-center py-16 px-6 bg-primary sm:py-20 md:py-24 lg:py-32 sm:px-10 md:px-16 lg:px-24">
-      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-center text-secondary ">
+      <h2 className="text-3xl md:text-5xl font-extrabold text-center text-secondary mb-6">
         شركاؤنا
       </h2>
       <div className="flex justify-center mt-1">

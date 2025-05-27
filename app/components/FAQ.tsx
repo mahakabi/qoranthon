@@ -13,7 +13,7 @@ const FAQ = () => {
     <section id="faq" className="py-24 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:pt-6 lg:pt-8">
         <div className="mb-12">
-          <h2 className="text-3xl sm:text-4xl font-manrope text-center font-bold text-primary leading-[3.25rem]">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-center text-primary leading-[3.25rem]">
             الأسئلة الشائعة
           </h2>
           <div className="flex justify-center mt-4">

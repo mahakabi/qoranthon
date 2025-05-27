@@ -9,7 +9,7 @@ const About = () => {
       className="flex flex-col items-center justify-center py-16 px-6 bg-primary sm:py-20 md:py-24 lg:py-32 sm:px-10 md:px-16 lg:px-24"
     >
       <motion.h2
-        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-center text-secondary "
+        className="text-3xl md:text-5xl font-extrabold text-secondary mb-4"
         initial={{ y: -30, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -56,8 +56,8 @@ export default function Timeline() {
   ];
 
   return (
-    <section>
-      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-center text-primary pt-12 ">
+    <section className="mb-16 mt-6">
+      <h2 className="text-3xl md:text-5xl font-extrabold text-center text-primary pt-12 mb-6">
         رحلة المشارك
       </h2>
       <div className="flex justify-center">

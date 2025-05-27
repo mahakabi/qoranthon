@@ -48,7 +48,7 @@ const Tracks = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-center text-primary">
+      <h2 className="text-3xl md:text-5xl font-extrabold text-center text-primary  mb-6">
         مسارات الهاكاثون
       </h2>
       <div className="flex justify-center mt-4">

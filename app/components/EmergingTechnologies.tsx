@@ -34,7 +34,7 @@ const technologies = [
 const EmergingTechnologies = () => {
   return (
     <section className="py-20 px-6 sm:px-10 bg-primary text-center">
-      <motion.h2
+      {/* <motion.h2
         className="text-3xl md:text-5xl font-bold text-secondary mb-6 sm:mb-10"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -42,7 +42,28 @@ const EmergingTechnologies = () => {
         transition={{ duration: 0.8 }}
       >
         التقنيات الناشئة
+      </motion.h2> */}
+
+      <motion.h2
+        className="text-3xl md:text-5xl text-secondary mb-6"
+        initial={{ y: -30, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.8 }}
+      >
+        التقنيات الناشئة
       </motion.h2>
+
+      <div className="flex justify-center mt-4">
+        <motion.div
+          className="w-16 sm:w-20 md:w-24 h-0.5 bg-secondary rounded-full mb-12"
+          initial={{ scaleX: 0 }}
+          whileInView={{ scaleX: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 1, delay: 0.6 }}
+        />
+      </div>
 
       {/* <p className="text-md md:text-lg text-secondary max-w-2xl mx-auto mb-12">
                 بعد اختيار المسار يتم العمل على تقديم حلول باستخدام إحدى التقنيات التالية

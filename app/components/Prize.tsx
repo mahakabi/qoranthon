@@ -16,7 +16,9 @@ const Prizes = () => {
   return (
     <div className="py-12 bg-gray-100 ">
       <div className=" flex flex-col items-center justify-center">
-        <h2 className="text-3xl text-center text-primary mb-6">الجوائز</h2>
+        <h2 className="text-3xl md:text-5xl font-extrabold text-center text-primary mb-6">
+          الجوائز
+        </h2>
         <motion.div
           className="w-16 sm:w-20 md:w-24 h-0.5 bg-secondary rounded-full mb-6"
           initial={{ scaleX: 0 }}
