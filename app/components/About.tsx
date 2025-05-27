@@ -20,7 +20,7 @@ const About = () => {
       </motion.h2>
 
       <motion.div
-        className="w-16 sm:w-20 md:w-24 h-1 bg-secondary rounded-full mb-6"
+        className="w-16 sm:w-20 md:w-24 h-0.5 bg-secondary rounded-full mb-6"
         initial={{ scaleX: 0 }}
         animate={{ scaleX: 1 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -38,7 +38,7 @@ const About = () => {
       >
         حدث تقني تنافسي يجمع نخبة من المبدعين والمبتكرين في مجالات متعددة بهدف
         تطوير حلول مبتكرة تعزز تجربة مستخدمي تطبيقات القرآن الكريم في قراءة
-        وتدبر وتدارس الآيات.
+        وتدبر وتدارس الآيات
       </motion.p>
     </section>
   );
