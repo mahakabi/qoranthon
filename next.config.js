@@ -2,7 +2,7 @@
 const nextConfig = {
   /* config options here */
   env: {
-    API_URL: 'http://localhost:5000/api',
+    API_URL: 'https://ayathon.tech/api',
   },
 };
 

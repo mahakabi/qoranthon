@@ -27,7 +27,7 @@ const Header = () => {
             <div className="relative w-full">
                 <div className="max-w-screen-xl mx-auto flex items-center justify-between gap-4">
                     <div className="flex items-center">
-                        <Link href="http://localhost:3000/auth/register">
+                        <Link href="https://ayathon.tech/auth/register">
                             <motion.button
                                 className="text-sm md:text-md lg:text-md bg-primary text-white flex items-center transition-all rounded-3xl px-5 py-2.5"
                                 whileHover={{ scale: 1.1 }}
