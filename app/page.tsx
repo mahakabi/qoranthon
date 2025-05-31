@@ -12,6 +12,7 @@ import ProgressBar from "./components/ProgressBar";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import Prizes from "./components/Prize";
 import Partners from "./components/Partners";
+import FeedbackForm from "./components/FeedbackForm";
 // import Reqierment from "./components/Reqierment";
 // import ContactUs from "./components/ContactUs";
 
@@ -33,6 +34,8 @@ export default function Home() {
       <Timeline />
       <Partners />
       <FAQ />
+      <FeedbackForm />
+      <div className="w-full h-1 bg-tertiary"></div>
       {/* <ContactUs /> */}
       {/* <Footer /> */}
     </div>
