@@ -27,7 +27,7 @@ const Prizes = () => {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 1, delay: 0.6 }}
         />
-        <p className="text-md md:text-xl lg:text-xl text-center text-primary mb-10 md:mb-24 px-9 ">
+        <p className="text-md md:text-xl lg:text-xl text-center text-primary mb-10 md:mb-24 px-9 font-bold">
           جوائز مقدمة تصل قيمتها إلى ١٠٠٬٠٠٠{" "}
           <span>
             <svg
@@ -55,7 +55,7 @@ const Prizes = () => {
             <h3 className="text-base md:text lg:text-2xl text-gray-800 mb-2">
               المركز الأول
             </h3>
-            <p className="text-sm md:text-xl lg:text-xl text-primary">
+            <p className="text-sm md:text-xl lg:text-xl text-primary font-bold">
               ٥٠٬٠٠٠{" "}
               <span>
                 <svg
@@ -84,7 +84,7 @@ const Prizes = () => {
             <h3 className="text-base md:text-2xl lg:text-2xl text-gray-800 mb-2">
               المركز الثاني
             </h3>
-            <p className="text-sm md:text-xl lg:text-xl text-primary">
+            <p className="text-sm md:text-xl lg:text-xl text-primary font-bold">
               ٣٠٬٠٠٠{" "}
               <span>
                 <svg
@@ -113,7 +113,7 @@ const Prizes = () => {
             <h3 className="text-base md:text-2xl lg:text-2xl text-gray-800 mb-2">
               المركز الثالث
             </h3>
-            <p className="text-sm md:text-xl lg:text-xl text-primary">
+            <p className="text-sm md:text-xl lg:text-xl text-primary  font-bold">
               ٢٠٬٠٠٠{" "}
               <span>
                 <svg
