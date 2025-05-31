@@ -25,8 +25,8 @@ const quranFont = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "آياتثون",
-  description: "طموحنا عنان السماء",
+  title: "آياتثون ",
+  description: "اقرأ فسر ابتكر",
 };
 
 export default function RootLayout({

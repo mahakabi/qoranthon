@@ -18,6 +18,9 @@ const schema = z
       .max(10, "رقم هاتف العضو يجب أن يكون 10 أرقام")
       .regex(/^\d+$/, "رقم الهاتف يجب أن يحتوي على أرقام فقط"),
     role: z.enum(["تقني", "شرعي", "مصمم", "مشرف فريق"]).default("مشرف فريق"),
+    track: z
+      .enum(["التفسير", "المجتمع القرآني", "التلاوة", "الحفظ"])
+      .default("الحفظ"),
     hasTeam: z.boolean(),
     team: z
       .array(
@@ -125,7 +128,7 @@ export default function RegisterForm() {
               <input
                 {...register("fullName")}
                 className="w-full md:p-3 p-2 rounded-md border border-tertiary focus:ring-2 focus:ring-primary focus:outline-none"
-                placeholder="ادخل اسمك الكامل"
+                placeholder="أدخل اسمك الكامل"
               />
               {errors.fullName && (
                 <p className="text-red-500 text-sm">
@@ -139,7 +142,7 @@ export default function RegisterForm() {
               <input
                 {...register("email")}
                 className="w-full md:p-3 p-2 rounded-md border border-tertiary focus:ring-2 focus:ring-primary focus:outline-none"
-                placeholder="ادخل بريدك الإلكتروني"
+                placeholder="أدخل بريدك الإلكتروني"
               />
               {errors.email && (
                 <p className="text-red-500 text-sm">{errors.email.message}</p>
@@ -151,7 +154,7 @@ export default function RegisterForm() {
               <input
                 {...register("phone")}
                 className="w-full md:p-3 p-2 rounded-md border border-tertiary focus:ring-2 focus:ring-primary focus:outline-none"
-                placeholder="ادخل رقم هاتفك"
+                placeholder="أدخل رقم هاتفك"
                 inputMode="numeric"
                 pattern="\d*"
                 maxLength={10}
@@ -180,6 +183,21 @@ export default function RegisterForm() {
                 <p className="text-red-500 text-sm">{errors.role.message}</p>
               )}
             </div>
+            <div className="space-y-1">
+              <label className="block text-primary">المسار</label>
+              <select
+                {...register(`track`)}
+                className="w-full md:p-3 p-2 rounded-md border border-tertiary focus:ring-2 focus:ring-primary focus:outline-none"
+              >
+                <option value="التفسير">التفسير</option>
+                <option value="المجتمع القرآني">المجتمع القرآني</option>
+                <option value="التلاوة">التلاوة</option>
+                <option value="الحفظ">الحفظ</option>
+              </select>
+              {errors.track && (
+                <p className="text-red-500 text-sm">{errors.track.message}</p>
+              )}
+            </div>
 
             <div className="flex items-center justify-between">
               <label className="text-primary">هل لديك فريق؟</label>
@@ -196,8 +214,8 @@ export default function RegisterForm() {
                   معلومات أعضاء الفريق
                 </h2>
                 <p className="text-sm text-red-500">
-                  يجب أن يحتوي الفريق على ٣ أعضاء على الأقل، ويمكن أن يصل إلى ٥
-                  أعضاء كحد أقصى
+                  يجب أن يحتوي الفريق على ٣ أعضاء على الأقل، ويمكن أن يصل العدد
+                  إلى ٥ أعضاء كحد أقصى
                 </p>
                 {fields.map((field, index) => (
                   <div
@@ -210,7 +228,7 @@ export default function RegisterForm() {
                     <label className="block text-primary">الاسم الكامل</label>
                     <input
                       {...register(`team.${index}.fullName`)}
-                      placeholder="اسم العضو الكامل"
+                      placeholder="أدخل اسم العضو الكامل"
                       className="w-full md:p-3 p-2 rounded-md border border-tertiary focus:ring-2 focus:ring-primary focus:outline-none"
                     />
                     <p className="text-red-500 text-sm">
@@ -222,7 +240,7 @@ export default function RegisterForm() {
                     </label>
                     <input
                       {...register(`team.${index}.email`)}
-                      placeholder="بريد العضو الإلكتروني"
+                      placeholder="أدخل بريد العضو الإلكتروني"
                       className="w-full md:p-3 p-2 rounded-md border border-tertiary focus:ring-2 focus:ring-primary focus:outline-none"
                     />
                     <p className="text-red-500 text-sm">
@@ -232,7 +250,7 @@ export default function RegisterForm() {
                     <label className="block text-primary">رقم الهاتف</label>
                     <input
                       {...register(`team.${index}.phone`)}
-                      placeholder="رقم هاتف العضو"
+                      placeholder="أدخل رقم هاتف العضو"
                       className="w-full md:p-3 p-2 rounded-md border border-tertiary focus:ring-2 focus:ring-primary focus:outline-none"
                       inputMode="numeric"
                       pattern="\d*"
