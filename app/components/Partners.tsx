@@ -20,7 +20,11 @@ const Partners = () => {
     },
     {
       alt: "مسار",
-      src: "/partners/masar.png",
+      src: "/partners/masar-color.png",
+    },
+    {
+      alt: "الاعلام",
+      src: "/partners/image.png",
     },
   ];
   return (
@@ -52,7 +56,7 @@ const Partners = () => {
               alt={partner.alt}
               fill
               className="object-cover"
-              priority={index < 3}
+              // priority={index < 3}
             />
           </div>
         ))}
