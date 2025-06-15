@@ -26,7 +26,7 @@ const Hero = () => {
 
   useEffect(() => {
     const update = () => {
-      setTimeLeft(getTimeRemaining(new Date("2025-06-15T00:00:00").getTime()));
+      setTimeLeft(getTimeRemaining(new Date("2025-06-25T21:00:00Z").getTime()));
     };
 
     update();
@@ -78,7 +78,7 @@ const Hero = () => {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 1, delay: 1.2 }}
         >
-          الوقت المتبقي على إغلاق التسجيل
+          العد التنازلي لانطلاق الهاكاثون
         </motion.p>
 
         <motion.div

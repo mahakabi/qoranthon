@@ -80,14 +80,12 @@ const Header = () => {
         )}
 
         <div className="flex items-center gap-4">
-            <Link href="https://ayathon.tech/auth/register">
-            <motion.button
-              className="text-sm md:text-md lg:text-md bg-primary text-white flex items-center transition-all rounded-3xl px-5 py-2.5"
-              whileHover={{ scale: 1.1 }}
-            >
-              التسجيل
-            </motion.button>
-          </Link>
+          <motion.button
+            className="text-sm md:text-md lg:text-md bg-gray-500 text-white flex items-center transition-all rounded-3xl px-5 py-2.5 cursor-not-allowed opacity-75"
+            disabled
+          >
+            التسجيل مغلق
+          </motion.button>
         </div>
       </div>
     </header>
