@@ -334,7 +334,7 @@ export default function RegisterForm() {
             <p className="text-sm mb-4">
               من خلال التسجيل، أنت توافق على{" "}
               <a
-                href="https://ayathon.parmg.sa/terms"
+                href="/terms"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary underline"
